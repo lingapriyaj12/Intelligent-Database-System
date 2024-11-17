@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pneumonia Detection</title>
+    <!-- Update path to CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Pneumonia Detection</h1>
+        <p>Upload a chest X-ray image to check for pneumonia.</p>
+
+        <form id="pneumonia-form">
+            <input type="file" id="imageUpload" accept="image/*">
+            <button type="button" id="submitBtn">Submit</button>
+            <p id="message" class="message"></p>
+        </form>
+
+        <div id="result" class="result">
+            <!-- Diagnosis result will appear here -->
+        </div>
+    </div>
+
+    <!-- Update path to JS -->
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
